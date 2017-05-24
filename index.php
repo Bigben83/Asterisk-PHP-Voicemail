@@ -7,11 +7,28 @@ include('library.php');
 //Security function outputs a full login page if not logged-in.
 if(! security()) exit;
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<head><title>Asterisk PHP Web Voicemail Interface</title>
-<link href="main.css" rel="stylesheet" type="text/css" />
-</head><body class="Normal"><div align="center">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Voicemail Interface</title>
+	<link href="normalize.css" rel="stylesheet" type="text/css" />
+	<link href="skeleton.css" rel="stylesheet" type="text/css" />
+	<link href="main.css" rel="stylesheet" type="text/css" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="container">
+	<div class="row"><div align="center">
+	
+	<div class="twelve columns" style="margin-top: 5%">
+		<h4 style="text-align: center">Voicemail Server</h4>
+	</div>
+	
+<div class="twelve columns">
+
 <script language="PHP">
 
 if($_POST['new_folder'])
@@ -85,11 +102,10 @@ if($folder == 'tmp') $folder_name = 'Trash';
 	else $folder_name = $folder;
 
 </script>
-</div>
+
 <form method="POST">
-<div align="center">
-<table border="1">
-<tr bgcolor="#000099" class="BgWtTxt">
+<table>
+<tr>
 	<td colspan="5" align="center">Mailbox <? echo $mbinfo['mailbox']; ?> for
 	<? echo $mbinfo['fullname']; ?>, Folder: <i><b><?echo $folder_name; ?></b></i></td>
 </tr>
@@ -128,14 +144,14 @@ krsort($arr_messages);	//Sort by time- reverse order.
 foreach($arr_messages as $arr_msg)
 {
 	echo "<tr>";
-	echo "<td><a href=\"http://asterisk.nbm.com/vm/mp3stream.php/".$arr_msg['shortfile'].".mp3\" target=\"_BLANK\" title=\"Click to play.\">\n";
+	echo "<td><a href=\"http://sap.cloudalarms.net/voicemail/mp3stream.php/".$arr_msg['shortfile'].".mp3\" target=\"_BLANK\" title=\"Click to play.\">\n";
 	if(strlen($arr_msg['callerid']) >= 3) echo $arr_msg['callerid'];
 	else echo "<i>Unknown</i>";
 	echo "</a></td>\n";
-	echo "<td><a href=\"http://asterisk.nbm.com/vm/mp3stream.php/".$arr_msg['shortfile'].".mp3\" target=\"_BLANK\" title=\"Click to play.\">\n";
+	echo "<td><a href=\"http://sap.cloudalarms.net/voicemail/mp3stream.php/".$arr_msg['shortfile'].".mp3\" target=\"_BLANK\" title=\"Click to play.\">\n";
 	echo $arr_msg['origdate'];
 	echo "</a></td>\n";
-	echo "<td align=\"center\"><a href=\"http://asterisk.nbm.com/vm/mp3stream.php/".$arr_msg['shortfile'].".mp3\" target=\"_BLANK\" title=\"Click to play.\">\n";
+	echo "<td align=\"center\"><a href=\"http://sap.cloudalarms.net/voicemail/mp3stream.php/".$arr_msg['shortfile'].".mp3\" target=\"_BLANK\" title=\"Click to play.\">\n";
 	if($arr_msg['duration'] > 0) echo nice_time($arr_msg['duration']);
 	echo "</a></td>\n";
 	echo "<td>\n";
@@ -187,6 +203,9 @@ if($trashcount = $_SESSION['has_trash'])
 </script>
 <br><input type="submit" name="logout" value="logout">
 </div></form>
+</div>
+
+
 <script language="PHP">
 include('cite.php');
 /////Debugging Block...
@@ -204,5 +223,9 @@ echo "<br>vmInfo:<br>";
 foreach($vminfo as $index => $value) echo "$index => $value<br>"; 	//debugging
 */
 </script>
+
+</div>
+</div></div>
+
 </body>
 </html>
