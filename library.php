@@ -103,43 +103,59 @@ function security()
 		//Show login screen...
 		//Need to send full HTML since this function runs before any other main program output.
 		?>
-			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-			<html xmlns="http://www.w3.org/1999/xhtml">
+			<!DOCTYPE html>
+			<html lang="en">
 			<head>
-			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-			<head><title>Asterisk PHP Web Voicemail Login</title>
-			<link href="main.css" rel="stylesheet" type="text/css" />
+				<title>Voicemail Interface</title>
+				<link href="normalize.css" rel="stylesheet" type="text/css" />
+				<link href="skeleton.css" rel="stylesheet" type="text/css" />
+				<link href="main.css" rel="stylesheet" type="text/css" />
+				
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 			</head>
+
 			<body>
-			<form method="POST"><div align="center">
-			<table width="21%" border="0" cellspacing="3" cellpadding="3">
-				<tr bgcolor="#000099">
-      			<td><div align="center" class="BgWtTxt"><strong>Voicemail Login</strong></div></td>
-    			</tr>
-    			<tr class="Normal">
-      			<td><div align="center">Mailbox:
-          		<input type="text" name="userid" size="3" maxlength="10" />
+				<div class="container">
+				<div class="row">
+				<div align="center">
+				
+				
+				<div class="twelve columns" style="margin-top: 5%">
+				<h4>Voicemail Server</h4>
+				</div>
+
+		
+			<div class="twelve columns">
+			<form method="POST">
+			
+			<div align="center" class="BgWtTxt">
+				<strong>Login</strong></div>
+			
+			<div align="center">Mailbox:
+          		<input type="text" name="userid" size="5" maxlength="10" />
         			</div>
-        			</td>
-			   </tr>
-			   <tr class="Normal">
-			   	<td><div align="center">Password:
-          	<input type="password" name="password" size="3" maxlength="10" />
+        			
+			<div align="center">Password:
+          	<input type="password" name="password" size="5" maxlength="10" />
         			</div>
-        			</td>
-    			</tr>
-    			<tr class="Normal">
-      			<td><div align="center">
-          		<input type="submit" name="Login" value="Login" />
+        	
+			<div align="center">
+          	<input type="submit" name="Login" value="Login" />
         			</div>
-        			</td>
-    			</tr>
-  			</table>
-			</form></div>
+        			
+			</form>
+			</div>
+		
 			<? include('cite.php'); ?>
+			
+			</div>
+			</div></div>
 			</body>
 			</html>
-		<?php
+
+
+<?php
 		exit;
 		return(0);
 	}
