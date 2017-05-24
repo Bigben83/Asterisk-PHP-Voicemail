@@ -5,3 +5,9 @@ It is designed to be an alternative to the Web-based voicemail system that ships
 because of the potential security risks of using a setuid root Perl script.
 
 https://sourceforge.net/projects/ast-php-vm/
+
+
+
+#Updates
+
+Making Webpages fully responsive
