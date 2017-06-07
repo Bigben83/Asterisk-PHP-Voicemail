@@ -125,9 +125,14 @@ function security()
 ?>
 <!DOCTYPE html>
 	<html lang="en">
-		<?php include('doc-header.php'); ?>
+	<head>
+			<?php include('doc-header.php'); ?>
+		<title>Secure Voicemail Interface</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+	</head>
 
-<body>
+	<body>
 	<div class="container">
 			<div class="content">			
 			<?php include('header.php'); ?>
@@ -135,7 +140,7 @@ function security()
 			<div class="row">
 				<div align="center">				
 						<div class="twelve col" style="margin-top: 5%">
-							<h2>Voicemail Server</h2>
+							<h2>Secure Voicemail Server</h2>
 						</div>
 			</div>
 			
@@ -166,8 +171,6 @@ function security()
 							</form>
 						</fieldset>
 					</div>
-				
-					<?php include ('cite.php'); ?>
 				
 				</div>
 			</div>
