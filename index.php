@@ -10,7 +10,12 @@ if(! security()) exit;
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include('doc-header.php'); ?>
+	<head>
+		<?php include('doc-header.php'); ?>
+		<title>Secure Voicemail Interface</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+	</head>
 
 <body>
 <?php include('header.php'); ?>
@@ -20,7 +25,7 @@ if(! security()) exit;
 			<div align="center">
 		
 				<div class="twelve col" style="margin-top: 5%">
-					<h4 style="text-align: center">Voicemail Server</h4>
+					<h4 style="text-align: center">Secure Voicemail Server</h4>
 				</div>
 			
 				<div class="twelve col">
