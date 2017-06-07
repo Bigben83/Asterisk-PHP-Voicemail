@@ -7,6 +7,10 @@ because of the potential security risks of using a setuid root Perl script.
 https://sourceforge.net/projects/ast-php-vm/
 
 
+Uncomment and add the following to voicemail.confthis changes the voicemail recording to be editable with this script.
+
+externnotify = /usr/local/bin/recursive.php
+
 
 #Updates
 
