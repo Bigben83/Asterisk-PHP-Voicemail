@@ -3,7 +3,6 @@
 	<!-- CSS -->
 	<link href="../css/normalize.css" rel="stylesheet" type="text/css" />
 	<link href="../css/main.css" rel="stylesheet" type="text/css" />
-	<link href="../css/map.css" rel="stylesheet" type="text/css">
 	<link href="../css/meshki.css" rel="stylesheet" type="text/css">
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
