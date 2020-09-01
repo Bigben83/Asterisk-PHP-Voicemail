@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<link href="map.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
 
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link rel="icon" type="image/ico" href="favicon.ico">
