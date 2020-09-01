@@ -124,54 +124,47 @@ function security()
 
 ?>
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-			<?php include('doc-header.php'); ?>
-		<title>Secure Voicemail Interface</title>
-		<meta name="description" content="">
-		<meta name="author" content="">
-	</head>
+<html lang="en">
+<head>
+	<?php include('doc-header.php'); ?>
+	<title>Secure Voicemail Interface</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+</head>
 
-	<body>
+<body>
 	<div class="container">
-			<div class="content">			
-			<?php include('header.php'); ?>
-
-			<div class="row">
-				<div align="center">				
-						<div class="twelve col" style="margin-top: 5%">
-							<h2>Secure Voicemail Server</h2>
-						</div>
+		<div class="content">			
+		
+			<div class="row">				
+                <div class="col-md text-center" style="margin-top: 5%">
+                    <h2>Secure Voicemail Server</h2>
+                </div>
 			</div>
 			
 			<div class="row">
-					<div class="twelve col">
-						<fieldset class="loginForm">
-							<legend>Login</legend>
-							<form method="POST">
-																	
-							<div class="row">
-							<div class="six col">
-							  <label for="userid">Mailbox:</label>
-							  <input id="userid" class="expand" type="text" name="userid" maxlength="10" placeholder="Enter text here">
-							</div>
-
-							<div class="six col">
-							  <label for="password">Password:</label>
-							  <input id="password" class="expand" type="password" name="password" maxlength="10">
-							</div>
-							</div>	
-							
-							<div class="row">
-							<div class="twelve col">
-							  <button class="expand large" type="submit" name="Login" value="Login">Login</button>
-							</div>
-							</div>						
-															
-							</form>
-						</fieldset>
-					</div>
-				
+				<div class="col-md">
+					<fieldset class="card p-2">
+						<legend>Login</legend>
+						<form method="POST">
+    						<div class="row">
+        						<div class="col-md-6">
+        						  <label for="userid">Mailbox:</label>
+        						  <input id="userid" class="form-control" type="text" name="userid" maxlength="10" placeholder="Enter text here">
+        						</div>
+        
+        						<div class="col-md-6">
+        						  <label for="password">Password:</label>
+        						  <input id="password" class="form-control" type="password" name="password" maxlength="10">
+        						</div>
+    						</div>	
+    						<div class="row py-2">
+        						<div class="col-md">
+        						  <button class="btn btn-danger" type="submit" name="Login" value="Login">Login</button>
+        						</div>
+    						</div>						
+						</form>
+					</fieldset>
 				</div>
 			</div>
 		</div>
