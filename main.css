@@ -1,15 +1,202 @@
-.Normal {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	color: #000000;
+/*
+-----------------------------------------------
+Style Sheet
+master styles
+----------------------------------------------- */
+
+/* =html */
+html { 
+
 }
 
-.BgWtTxt {
-	color: #FFFFFF;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
+/* =body */
+body { 
+	font: 14px/170% Sans-Serif;
+	color: #000;
+	margin: 0 auto; 
+	padding: 0;
+	}
+
+/*
+= TYPOGRAPHY ---------------------------------- */
+h1, h2, h3, h4, h5 h6 {
+	font: bold 1em/1.5em Sans-Serif;
+	color: #D61B0C;
+	margin: 8px 0px 8px 0px;
+	line-height: 1em;
+}
+h1 { font-size: 2.1em; font-weight: bold; text-align: center; padding: 10px 0 10px 0;}
+h2 { font-size: 2.2em; font-weight: bold;  }
+h3 { font-size: 1.7em; font-weight: bold; letter-spacing: -0.5px; color: #636363; }
+h4 { font-size: 1.3em; color: #636363; text-transform:uppercase; border-bottom: 1px solid #636363; padding: 10px 0 5px 0; margin-top: 5px}
+h5 { font-size: 1.1em; color: #636363; text-transform:uppercase; padding: 10px 0 5px 0; margin: 0;}
+h6 { font-size: 1.7em; font-weight: bold; letter-spacing: -0.5px; color: #D61B0C; }
+
+.errors{
+	margin: 0 0 0 25px;
+	color: #d82508;
+}
+
+/* =strong/b/em/i */
+strong, b { 
+	font-weight : bold; 
+}
+em, i { 
+	font-style : italic; 
+}
+
+/*
+
+= LISTS ---------------------------------- */
+
+/* =ul */
+ul#skipNav {
+ 	position: absolute;
+ 	text-indent: -9000px;
+}
+/* =ol */
+/* =li */
+/* =img */
+/* =a */
+a:link 		{ text-decoration: none; color: #ff0000; font-weight:bold;}
+a:visited	{ text-decoration: none; color: #ff0000;}
+a:hover 	{ text-decoration: underline;  }
+a:active 	{ text-decoration: none; }
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+th, tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+
+/* ------------------------------------------------------------------------------
+    L A Y O U T
+--------------------------------------------------------------------------------- */
+
+/*////////////////////////////////////////////////// header////////////////////////////////////////////////// */
+
+#map-header {
+  position: relative;
+  margin: 0 auto;
+  width: 1080px;
+}
+
+
+/*//////////////////////////////////////////////////  navigation  //////////////////////////////////////////////////*/
+#navMain {
+	position: fixed;
+	top: 0px;
+	margin: 0 auto;
+	padding: 0;
+	width: 1080px;
+	height: 38px;
+	z-index: 2000;
+}
+
+
+/* style the outer div to give it width */
+.menu {
+	position:relative; 
+	margin:0; 
+	z-index:100;
+	text-transform:capitalize;
+}
+
+/* remove all the bullets, borders and padding from the default list styling */
+.menu ul {
+	float:left;
+	padding:0;
+	margin:0;
+	list-style-type:none; 
+	height:35px; 
+	background:none;
+}
+
+/* style the sub-level lists */
+.menu ul ul {
+	width:120px;
+}
+
+/* float the top list items to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+.menu ul li {
+	float:left;
+	height:35px;
+	line-height:35px;
+	background: #fff;
+	margin: 0 1px;
+	border-top: 5px solid #d82508;
+	border-bottom: 1px solid #545454;
+}
+
+/* style the sub level list items */
+.menu ul ul li {
+	display:block;
+	width:144px;
+	height:auto; 
+	line-height:1em;
+	background: transparent url(../images/bg_nav2.png) top left repeat;
+}
+
+/* style the links for the top level */
+.menu a, .menu a:visited {
+	display:block;
+	float:left;
+	height:100%;
+	font-size:14px;
+	text-decoration:none;
+	color:#000;
+	background:none;
+	padding:0 12px; 
+	line-height: 35px;
+}
+.menu a:hover {
+	color:#d82508;
+}
+
+/* style the sub level links */
+.menu ul ul a, .menu ul ul a:visited {
+	display:block;
+	color:#000;
+	width:120px;
+	height:100%;
+	line-height:1em; 
+	padding:7px 12px;
+	text-transform:capitalize;
+}
+* html .menu ul ul a, * html .menu ul ul a:visited  {
+	width:120px; 
+	w\idth:12em;
+}
+
+
+.phone {
+	float:right;
+	height:35px;
+	line-height:35px;
+	margin: 0;
+	border-top: 5px solid #d82508;
+	border-bottom: 1px solid #545454;
+	background:url(../images/icon-phone.png) 6px 8px no-repeat #fff;
+}
+.phone p {
+	display:block;
+	font-size:16px;
+	text-decoration:none; 
+	color:#000;
+	padding:0px 12px 0 28px; 
+}
+
+#Page_title {
+	text-align:center;
+	position: fixed;
+	top: 65px;
+	font-size:35px;
+    width: 960px;
+}
+
+.fixed {
+	
 }
