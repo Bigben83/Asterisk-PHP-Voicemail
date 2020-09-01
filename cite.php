@@ -10,7 +10,7 @@ not all elements of the software may work properly.
 	<center>
 		Secure Voicemail v. <?php echo $version; ?> rel. <?php echo date('d-m-Y',filemtime('index.php')); ?>
 		<a href="release_notes.html" target="_blank">(Release Notes)</a>
-		</br>Copyright &copy; 2015 - <?php echo date("Y"); ?>, Benjamin M Harris</br>
+		</br>Copyright &copy; 2015 - <?php echo date("Y"); ?>, Voicemail Server</br>
 		<!-- <a href="http://www.fsf.org/licensing/licenses/gpl.html" target="_blank">Released under GPL</a><br> -->
 		<a href="#" target="_blank">Report Bug</a><br>
 		</center>
